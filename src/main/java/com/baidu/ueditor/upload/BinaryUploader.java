@@ -1,6 +1,5 @@
 package com.baidu.ueditor.upload;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
@@ -21,6 +20,7 @@ import com.baidu.ueditor.define.BaseState;
 import com.baidu.ueditor.define.FileType;
 import com.baidu.ueditor.define.State;
 import com.shijie99.ueditor.Config.ConfigTool;
+import com.shijie99.ueditor.util.Constant;
 
 public class BinaryUploader {
 
@@ -83,7 +83,7 @@ public class BinaryUploader {
 				//url改为请求地址，获取 日期/图片名/action名 为请求地址 --by wangcf
 				String[] ss = PathFormat.format(savePath).substring(0,PathFormat.format(savePath).lastIndexOf(".")).split("/");
 				//拼写请求的action地址
-				String url = ss[ss.length-2]+File.separator+ss[ss.length-1]+File.separator+suffix.substring(suffix.lastIndexOf(".")+1)+File.separator+ConfigTool.imageAction;
+				String url = ss[ss.length-2]+Constant.separator+ss[ss.length-1]+Constant.separator+suffix.substring(suffix.lastIndexOf(".")+1)+Constant.separator+ConfigTool.imageAction;
 				storageState.putInfo("url", url);
 				storageState.putInfo("type", suffix);
 				storageState.putInfo("original", originFileName + suffix);
