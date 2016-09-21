@@ -11,7 +11,7 @@ v1.0.0
 #上传图片保存地址
 ueditor.imageSavePath=D:/ueditor
 ```
-**[ohter]**
+**[other]**
 * 本项目为百度的ueditor与SpringMVC结合实现图片上传的功能，其他的未实现（目前本人只需要这个功能...）。
 * 图片保存地址可以自己配置，配置文件可以自己在applicationContext.xml中修改。
 * config.json文件中的imagePathFormat 不建议在前边增加路径，需要的请在图片保存地址中增加。
