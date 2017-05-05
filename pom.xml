@@ -181,13 +181,7 @@
 		</dependency>
 		
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>local_central</id>
-			<name>your custom repo</name>
-			<url>http://111.160.221.66:18081/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
+	
 	<build>
 		<plugins>
 			<plugin>
